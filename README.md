@@ -1,36 +1,62 @@
-# Singapore_Resale
-Resale Price Prediction Project
-Overview:
-This project focuses on predicting resale prices of housing units using Random Forest Regression. The dataset contains information on various attributes of properties such as town, flat type, floor area, and resale price.
+# Industrial Copper Modeling
 
-Data Sources:
-The dataset used for this project was sourced from [https://beta.data.gov.sg/collections/189/view]. It includes historical transaction data of residential properties, captured from [1990] to [2024], in [Singapore].
+## Project Overview
+This project aims to address challenges in the copper industry by developing machine learning models for sales pricing predictions and lead classification. The primary objectives are to improve pricing decisions using regression models and to enhance lead classification using classification models. A Streamlit web application will provide an interactive interface for these predictions.
 
-Methods Used:
-Data Preprocessing: Cleaning, handling missing values, and feature engineering.
-Modeling: Random Forest Regression to predict resale prices.
-Evaluation: Performance metrics including Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Square Error (RMSE), and R-squared (R2) Score.
-Dependencies:
-Python (version x.x.x)
-Libraries: pandas, scikit-learn, numpy
-Files:
-data.csv: Raw dataset containing property information.
-preprocessing.py: Python script for data preprocessing and feature engineering.
-random_forest_model.py: Python script for building and evaluating the Random Forest Regression model.
-requirements.txt: List of required libraries and their versions.
-Instructions:
-Ensure you have Python and the required libraries installed.
-Clone the repository and navigate to the project directory.
-Run preprocessing.py to preprocess the data.
-Run random_forest_model.py to train the Random Forest Regression model and evaluate its performance.
-Results:
-Random Forest Regression Model:
-MAE: [value]
-MSE: [value]
-RMSE: [value]
-R-squared: [value]
-Future Improvements:
-Tuning hyperparameters of the Random Forest model for better performance.
-Exploring other regression algorithms for comparison.
-Author:
-K.Dhanuja--dhanuja1503@gmail.com
+## Skills and Tools
+- Python scripting
+- Data Preprocessing
+- Exploratory Data Analysis (EDA)
+- Machine Learning (Regression & Classification)
+- Streamlit
+
+## Domain
+Manufacturing
+
+## Problem Statement
+The copper industry faces challenges with skewed and noisy sales and pricing data, affecting pricing strategies. The project involves:
+- Developing a regression model to predict continuous variable 'Selling_Price'.
+- Creating a classification model to predict lead status ('WON' or 'LOST').
+
+## Data Description
+The dataset contains various attributes regarding copper sales transactions, including identifiers, dates, quantities, customer details, and transaction status. The key target variables are `selling_price` for regression and `status` for classification.
+
+## Methodology
+1. **Data Understanding and Preprocessing:**
+   - Identify variable types and distributions.
+   - Handle missing values and outliers.
+   - Address skewness with transformations.
+   - Encode categorical variables.
+
+2. **Exploratory Data Analysis (EDA):**
+   - Visualize data distribution and outliers using Seaborn plots.
+
+3. **Feature Engineering:**
+   - Create informative features.
+   - Use heatmaps to identify and drop highly correlated features.
+
+4. **Model Building and Evaluation:**
+   - Regression: Train models like ExtraTreesRegressor, XGBRegressor.
+   - Classification: Train models like ExtraTreesClassifier, XGBClassifier.
+   - Use appropriate evaluation metrics and optimize hyperparameters.
+
+5. **Streamlit Application:**
+   - Develop a Streamlit app with task input and data entry fields.
+   - Perform real-time predictions for regression and classification tasks.
+
+## Learning Outcomes
+- Proficiency in Python and data analysis libraries (Pandas, NumPy, etc.).
+- Experience with data preprocessing and EDA.
+- Skills in regression and classification modeling.
+- Web app development using Streamlit.
+
+## Usage
+1. **Set up the environment:**
+   - Clone the repository.
+   - Install dependencies: `pip install -r requirements.txt`.
+
+2. **Run the Streamlit app:**
+   - Execute: `streamlit run app.py`.
+
+3. **Interact using the web interface:**
+   - Provide inputs to obtain predictions for sales price or lead status.
